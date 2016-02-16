@@ -1,0 +1,65 @@
+[root@sandbox ~]# Rscript group3_2.R BOS ATL LAX "04/03/2008"
+[1] "BOS -> ATL Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+8502      661    BOS  ATL      DL 2008-04-03      556   556
+2397      663    BOS  ATL      DL 2008-04-03      713   713
+[1] ""
+[1] "ATL -> LAX Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+8745      885    ATL  LAX      DL 2008-04-05     1451  1451
+3440       75    ATL  LAX      DL 2008-04-05     1704  1704
+2632      125    ATL  LAX      DL 2008-04-05     1842  1842
+3868       40    ATL  LAX      FL 2008-04-05     1857  1857
+5091       41    ATL  LAX      DL 2008-04-05     1943  1943
+5083     1423    ATL  LAX      DL 2008-04-05     2134  2134
+8251      535    ATL  LAX      DL 2008-04-05     2206  2206
+[1] ""
+
+
+[root@sandbox ~]# Rscript group3_2.R PHX JFK MSP "09/07/2008"
+[1] "PHX -> JFK Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+7904      118    PHX  JFK      DL 2008-09-07      634   634
+4139       12    PHX  JFK      US 2008-09-07      904   904
+4923      178    PHX  JFK      B6 2008-09-07     1127  1127
+[1] ""
+[1] "JFK -> MSP Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+9206      609    JFK  MSP      NW 2008-09-09     1747  1747
+[1] ""
+
+
+[root@sandbox ~]# Rscript group3_2.R DFW STL ORD "01/24/2008"
+[1] "DFW -> STL Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+4665     1118    DFW  STL      AA 2008-01-24        0     0
+7924     1336    DFW  STL      AA 2008-01-24      657   657
+439       314    DFW  STL      AA 2008-01-24      836   836
+9136     1030    DFW  STL      AA 2008-01-24      940   940
+[1] ""
+[1] "STL -> ORD Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+7894      640    STL  ORD      AA 2008-01-26     1452  1452
+2110     2245    STL  ORD      AA 2008-01-26     1654  1654
+[1] ""
+
+
+[root@sandbox ~]# Rscript group3_2.R LAX MIA LAX "05/16/2008"
+[1] "LAX -> MIA Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+1708      202    LAX  MIA      AA 2008-05-16      708   708
+8780      280    LAX  MIA      AA 2008-05-16      817   817
+[1] ""
+[1] "MIA -> LAX Flights"
+[1] "==================="
+     flightno origin dest carrier       date dep_time delay
+2879      456    MIA  LAX      AA 2008-05-18     1925  1925
+9457      972    MIA  LAX      AA 2008-05-18     2101  2101
+[1] ""

@@ -1,0 +1,32 @@
+
+ origin | dest | carrier | delayavg
+--------+------+---------+----------
+    LGA |  BOS |      TW |        0
+    LGA |  BOS |      PA |   6.8513
+    LGA |  BOS |      EA |   8.4521
+    LGA |  BOS |      DL |    13.33
+    LGA |  BOS |      NW |   19.173
+
+
+ origin | dest | carrier | delayavg
+--------+------+---------+----------
+    BOS |  LGA |      TW |        0
+    BOS |  LGA |      EA |   10.482
+    BOS |  LGA |      PA |   11.318
+    BOS |  LGA |      NW |   20.975
+    BOS |  LGA |      AA |       40
+
+
+ origin | dest | carrier | delayavg
+--------+------+---------+----------
+    OKC |  DFW |      TW |   3.2171
+    OKC |  DFW |      AA |   5.8371
+    OKC |  DFW |      DL |    6.871
+
+
+ origin | dest | carrier | delayavg
+--------+------+---------+----------
+    MSP |  ATL |      EA |   7.5873
+    MSP |  ATL |      DL |   9.3173
+    MSP |  ATL |      NW |   10.772
+

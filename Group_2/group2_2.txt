@@ -1,0 +1,68 @@
+
+ origin | carrier | delayavg
+--------+---------+----------
+    SRQ |      US |   9.5792
+    SRQ |      CO |   7.7873
+    SRQ |      EA |   7.1953
+    SRQ |      UA |   7.0337
+    SRQ |      TW |   6.3811
+    SRQ |      NW |   5.8262
+    SRQ |      AA |   4.9991
+    SRQ |      DL |    4.942
+
+
+ origin | carrier | delayavg
+--------+---------+----------
+    CMH |      UA |   9.1926
+    CMH |      CO |   8.3012
+    CMH |      US |   8.0592
+    CMH |      AL |   6.5911
+    CMH |      TW |   6.4196
+    CMH |      EA |   6.0496
+    CMH |      PI |   5.7322
+    CMH |      AA |   5.0935
+    CMH |      DL |   3.9767
+    CMH |      NW |   3.6895
+
+
+ origin | carrier | delayavg
+--------+---------+----------
+    JFK |      HP |   18.814
+    JFK |      PI |   16.333
+    JFK |      NW |   15.744
+    JFK |      TW |   14.434
+    JFK |      EA |   13.319
+    JFK |      PA |   13.212
+    JFK |      AL |   12.433
+    JFK |      UA |   8.5137
+    JFK |      DL |   7.1717
+    JFK |      AA |   6.3144
+
+
+ origin | carrier | delayavg
+--------+---------+----------
+    SEA |      UA |   10.052
+    SEA |      CO |    10.01
+    SEA |      US |   9.3713
+    SEA |      NW |   8.2622
+    SEA |      HP |   7.0295
+    SEA |      AA |   6.7973
+    SEA |      AL |   6.5102
+    SEA |      DL |    6.451
+    SEA |      AS |   6.2094
+    SEA |      PS |   4.9827
+
+
+ origin | carrier | delayavg
+--------+---------+----------
+    BOS |      PI |     12.1
+    BOS |      US |   11.783
+    BOS |      TW |   10.078
+    BOS |      NW |    9.655
+    BOS |      AL |   9.1577
+    BOS |      EA |   8.9539
+    BOS |      DL |   8.3512
+    BOS |      CO |   8.3499
+    BOS |      AA |   6.6538
+    BOS |      PA |   5.5917
+
