@@ -1,0 +1,70 @@
+
+ origin | dest | delayavg
+--------+------+----------
+    SRQ |  BWI |  0.96419
+    SRQ |  MEM |   2.2815
+    SRQ |  MSP |   2.4167
+    SRQ |  MCO |   2.9848
+    SRQ |  RDU |   3.5513
+    SRQ |  BNA |   3.5668
+    SRQ |  TPA |    4.057
+    SRQ |  IAH |   4.1106
+    SRQ |  CLT |    4.176
+    SRQ |  DCA |   4.3368
+
+
+ origin | dest | delayavg
+--------+------+----------
+    CMH |  MSP |   2.3021
+    CMH |  BNA |   2.6359
+    CMH |  SDF |   2.9076
+    CMH |  DTW |   3.2869
+    CMH |  CLE |   3.5629
+    CMH |  DFW |    3.862
+    CMH |  MEM |   4.0723
+    CMH |  ATL |   4.8116
+    CMH |  MCO |   4.8323
+    CMH |  IND |   4.8381
+
+
+ origin | dest | delayavg
+--------+------+----------
+    JFK |  TUS |        0
+    JFK |  ISP |        0
+    JFK |  PDX |   2.1609
+    JFK |  UCA |    2.582
+    JFK |  BQN |   2.7293
+    JFK |  PSE |   2.9388
+    JFK |  STT |   3.1867
+    JFK |  SNA |    4.047
+    JFK |  BDL |   5.2885
+    JFK |  SRQ |    6.125
+
+
+ origin | dest | delayavg
+--------+------+----------
+    SEA |  ONT |   3.4235
+    SEA |  SJC |   3.5091
+    SEA |  PSP |      3.7
+    SEA |  SNA |   4.1263
+    SEA |  OGG |   4.1628
+    SEA |  LGB |   4.5136
+    SEA |  GEG |   4.5658
+    SEA |  CVG |   4.5953
+    SEA |  SLC |   4.6276
+    SEA |  SIT |   4.6462
+
+
+ origin | dest | delayavg
+--------+------+----------
+    BOS |  SJC |    3.573
+    BOS |  LGA |   3.7102
+    BOS |  MDW |    5.297
+    BOS |  SLC |   5.7681
+    BOS |  BDL |   6.2201
+    BOS |  SJU |   6.3176
+    BOS |  BNA |   6.8922
+    BOS |  CVG |   7.2206
+    BOS |  RDU |   7.2427
+    BOS |  MKE |   7.3931
+
