@@ -20,18 +20,22 @@ p = subprocess.Popen("cqlsh -k mykeyspace", stdout=subprocess.PIPE, stderr=subpr
 p.stdin.write(stmnt)
 out = p.stdout.readline()
 
-CREATE TABLE results2_1 (origin text, delayavg double, carrier text, PRIMARY KEY(origin, delayavg, carrier)) WITH CLUSTERING ORDER BY (delayavg DESC, carrier ASC);
 
-CREATE TABLE results2_2 (origin text, delayavg double, dest text, PRIMARY KEY(origin, delayavg, dest)) WITH CLUSTERING ORDER BY (delayavg DESC, dest ASC);
+CREATE TABLE results2_1 (origin text, carrier text, depdelay counter, total counter PRIMARY KEY(origin, carrier)) WITH CLUSTERING ORDER BY (carrier ASC);
 
-CREATE TABLE results2_3 (origin text, dest text, delayavg double, carrier text, PRIMARY KEY((origin, dest), delayavg, carrier)) WITH CLUSTERING ORDER BY (delayavg DESC, carrier ASC);
 
-CREATE TABLE results3_2 (flightno int, origin text, dest text, carrier text, date text, dep_time int, arrival_delay int, PRIMARY KEY(flightno));
+CREATE TABLE results2_2 (origin text, dest text, depdelay counter, total counter, PRIMARY KEY(origin, dest)) WITH CLUSTERING ORDER BY (dest ASC);
 
-CREATE TABLE results3_2 (flightno int, origin text, dest text, carrier text, date text, dep_time int, arrival_delay int);
+
+CREATE TABLE results2_3 (origin text, dest text, carrier text, arrdelay counter, total counter, PRIMARY KEY(origin, dest, carrier)) WITH CLUSTERING ORDER BY (dest ASC, carrier ASC);
+
+
+
+CREATE TABLE results3_2 (id counter, flightno int, origin text, dest text, carrier text, date text, dep_time int, arrival_delay int, PRIMARY KEY(id));
 
 
 library(RJDBC)
 cassdrv <- JDBC("org.apache.cassandra.cql.jdbc.CassandraDriver", list.files("/usr/share/cassandra/lib",pattern="jar$",full.names=T))
 casscon <- dbConnect(cassdrv, "jdbc:cassandra://localhost:9160/mykeyspace")
 res <- dbGetQuery(casscon, "select * from results2_1 limit 10")
+
