@@ -25,9 +25,9 @@
 ##
 #################################################################
 
-library(rhdfs)
-library(dplyr)
-library(RJDBC)
+suppressWarnings(suppressMessages(library(rhdfs, warn.conflicts=FALSE, quietly=TRUE)))
+suppressWarnings(suppressMessages(library(dplyr, warn.conflicts=FALSE, quietly=TRUE)))
+suppressWarnings(suppressMessages(library(RJDBC, warn.conflicts=FALSE, quietly=TRUE)))
 
 # Command line processing
 args <- commandArgs(trailingOnly = TRUE)
@@ -52,10 +52,10 @@ if(dim(x2y)[1] > 0)
 {
     x2y <- x2y[order(x2y$delay), ]
     # Process data
-    print(sprintf("%s -> %s Flights", X, Y))
-    print("===================")
-    print(x2y)
-    print("")
+    cat(sprintf("%s -> %s Flights\n", X, Y))
+    cat("===================\n")
+    print(x2y, row.names = FALSE)
+    cat("\n")
     
     d1 <- DATE
     flights <- y2z[y2z$date - d1 == 2, ]
@@ -64,12 +64,12 @@ if(dim(x2y)[1] > 0)
     # Output results
     if(dim(flights)[1] > 0)
     {
-        print(sprintf("%s -> %s Flights", Y, Z))
-        print("===================")
-        print(flights)
-        print("")
+        cat(sprintf("%s -> %s Flights\n", Y, Z))
+        cat("===================\n")
+        print(flights, row.names = FALSE)
+        cat("\n")
     }
     
 } else {
-    print(sprintf("No flights found matching criteria X=%s; Y=%s; Z=%s; DATE=%s", X, Y, Z, DATE))
+    cat(sprintf("No flights found matching criteria X=%s; Y=%s; Z=%s; DATE=%s", X, Y, Z, DATE))
 }

@@ -31,7 +31,7 @@ CREATE TABLE results2_3 (origin text, dest text, carrier text, arrdelay counter,
 
 
 
-CREATE TABLE results3_2 (id counter, flightno int, origin text, dest text, carrier text, date text, dep_time int, arrival_delay int, PRIMARY KEY(id));
+CREATE TABLE results3_2 (id text, flightno int, origin text, dest text, carrier text, date text, dep_time int, arrival_delay int, PRIMARY KEY(id));
 
 
 library(RJDBC)

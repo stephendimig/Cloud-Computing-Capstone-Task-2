@@ -6,13 +6,7 @@ from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
 from cassandra.cluster import Cluster
-
-def getUniqueNum():
-    if ('uniqueNum' not in globals()):
-        globals()['uniqueNum'] = 1
-    else:
-         globals()['uniqueNum'] = globals()['uniqueNum'] + 1
-    return globals()['uniqueNum']
+import uuid
 
 def getSession():
     if ('session' not in globals()):
@@ -45,11 +39,11 @@ def rdd2csv(p):
     date = p[4]
     dep_time = p[5]
     arrival_delay = p[6]
+    
+    id = uuid.uuid4()
 
-    query = "UPDATE mykeyspace.results3_2 SET flightno=" + str(flightno) + ", origin='" + origin + "', dest='" + dest + "', carrier='" + carrier + "', date='" + date + "', dep_time=" + str(dep_time) + ", arrival_delay=" + str(arrival_delay) + " WHERE id=" + getUniqueNum() + ";"
+    query = "UPDATE mykeyspace.results3_2 SET flightno=" + str(flightno) + ", origin='" + origin + "', dest='" + dest + "', carrier='" + carrier + "', date='" + date + "', dep_time=" + str(dep_time) + ", arrival_delay=" + str(arrival_delay) + " WHERE id='" + str(id) + "';"
     getSession().execute(query)
-
-    return str(unique_id) + "," + str(flightno) + "," + origin + "," + dest +  "," + carrier + "," + date + "," + str(dep_time) + "," + str(arrival_delay)
 
 if __name__ == "__main__":
     xvals = []

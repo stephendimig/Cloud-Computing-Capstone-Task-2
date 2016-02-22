@@ -1,0 +1,68 @@
+BOS -> ATL Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+      270    BOS  ATL      FL 2008-04-03      548     7
+      273    BOS  ATL      FL 2008-04-03      853    13
+      663    BOS  ATL      DL 2008-04-03      713    17
+      661    BOS  ATL      DL 2008-04-03      556    23
+      667    BOS  ATL      DL 2008-04-03      834    28
+      669    BOS  ATL      DL 2008-04-03     1011    33
+      671    BOS  ATL      DL 2008-04-03     1113    45
+
+ATL -> LAX Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+       75    ATL  LAX      DL 2008-04-05     1704     0
+       40    ATL  LAX      FL 2008-04-05     1857     0
+      885    ATL  LAX      DL 2008-04-05     1451     5
+     1185    ATL  LAX      DL 2008-04-05     1332     6
+       41    ATL  LAX      DL 2008-04-05     1943     9
+     1423    ATL  LAX      DL 2008-04-05     2134    12
+       41    ATL  LAX      FL 2008-04-05     2151    20
+      535    ATL  LAX      DL 2008-04-05     2206    73
+      125    ATL  LAX      DL 2008-04-05     1842   181
+
+PHX -> JFK Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+      178    PHX  JFK      B6 2008-09-07     1127     0
+      118    PHX  JFK      DL 2008-09-07      634     0
+       12    PHX  JFK      US 2008-09-07      904    43
+
+JFK -> MSP Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+      609    JFK  MSP      NW 2008-09-09     1747     0
+      369    JFK  MSP      NW 2008-09-09     1239   139
+
+DFW -> STL Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+      314    DFW  STL      AA 2008-01-24      836     0
+     1118    DFW  STL      AA 2008-01-24        0     0
+     1336    DFW  STL      AA 2008-01-24      657     0
+     1030    DFW  STL      AA 2008-01-24      940     0
+
+STL -> ORD Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+     1835    STL  ORD      AA 2008-01-26     1330     0
+     2245    STL  ORD      AA 2008-01-26     1654     0
+      640    STL  ORD      AA 2008-01-26     1452    79
+
+LAX -> MIA Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+      280    LAX  MIA      AA 2008-05-16      817    10
+      231    LAX  MIA      AA 2008-05-16      556    19
+      202    LAX  MIA      AA 2008-05-16      708    34
+
+MIA -> LAX Flights
+===================
+ flightno origin dest carrier       date dep_time delay
+      203    MIA  LAX      AA 2008-05-18     1536     0
+      456    MIA  LAX      AA 2008-05-18     1925     0
+      972    MIA  LAX      AA 2008-05-18     2101     0
+      397    MIA  LAX      AA 2008-05-18     1841     2
+      267    MIA  LAX      AA 2008-05-18     1651    41
+
